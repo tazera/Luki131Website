@@ -40,16 +40,23 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#">Powder Coating</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Machines and Tools</a></li>
+              <li><a class="dropdown-item" href="#">Dye Casting</a></li>
+              <li><a class="dropdown-item" href="#">Power Coating</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-pop" href="#">Contact Us</a>
+            <a class="nav-link btn-pop contact-link" href="#">Contact Us</a>
           </li>
         </ul>
       </div>

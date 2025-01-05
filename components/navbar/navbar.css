@@ -84,6 +84,15 @@ body,
     width: 100%;
 }
 
+/* Active state styling part of the Nav bar styling*/
+.nav-link:active,  .nav-link:focus {
+    color: #ff8800;
+}
+
+.nav-link:active::after, .nav-link:focus::after {
+    width: 100%;
+}
+
 /* Dropdown menu styling */
 .dropdown-menu {
     background: rgba(0, 0, 0, 0.9);
@@ -91,16 +100,25 @@ body,
     text-align: left;
 }
 
-.dropdown-menu .dropdown-item {
-    color: white;
+.dropdown-menu .dropdown-item:active, .dropdown-menu .dropdown-item:focus {
+   
     font-weight: 500;
     transition: color 0.3s ease;
+    background-color: transparent;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 
 .dropdown-menu .dropdown-item:hover {
     color: #ff8800;
     background-color: transparent;
 }
+
+
 
 /* "Contact Us" button highlight */
 .btn-pop {
@@ -117,6 +135,10 @@ body,
     transform: scale(1.1);
     box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.5);
     color: white; /* Ensures text remains white on hover */
+}
+
+.contact-link:active, .contact-link:focus {
+    color: black;
 }
 
 /* Remove the link underline effect on hover for the .btn-pop */
