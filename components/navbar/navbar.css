@@ -19,7 +19,8 @@ body,
 #main-navbar.scrolled {
     background:white;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Class to hide the navbar (slide it up) */
@@ -31,13 +32,13 @@ body,
 
 /*menu items*/
 .nav-item {
-    margin: 0 4px; /* Increase the margin between the menu items */
+    margin: 0 10px; /* Increase the margin between the menu items */
 }
 
 /* Brand */
 .navbar-brand {
     font-size: 19px;
-    padding: 20px 25px;
+    padding: 10px 15px;
     color: white;
     font-weight: 600;
     display: flex;
@@ -70,7 +71,7 @@ body,
     color: rgb(14, 13, 13);
     font-size: 19px;
     font-weight: 500;
-    padding: 20px 25px;
+    padding: 10px 15px;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -169,15 +170,17 @@ body,
     align-items: center;
 }
 
-.dropdown-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
-
 .dropdown-arrow::after {
     content: '\25BC'; /* Unicode for downward arrow */
     font-size: 12px;
     margin-left: 5px;
+}
+
+
+/* Increase the size of the favicon */
+.dropdown-icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
 }
 

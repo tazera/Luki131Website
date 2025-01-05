@@ -44,7 +44,10 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
+              <div class="dropdown-icon-container">
+                Services
+                <span class="dropdown-arrow"></span>
+              </div>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Machines and Tools</a></li>
