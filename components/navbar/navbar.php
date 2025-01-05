@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  />
+  <?php include './globals/bootstrapCSS.php'; ?>
   <link rel="stylesheet" href="/components/navbar/navbar.css" />
 
   <!-- Google Font: Montserrat -->
@@ -14,14 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand logo-link" href="#">
+      <a class="navbar-brand logo-link" href="index.php">
         <img src="resources/logo2.png" alt="Logo" />
         Luki131
       </a>
@@ -33,8 +30,7 @@
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -65,7 +61,7 @@
     const navbar = document.getElementById("main-navbar");
     let lastScrollTop = 0;
 
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function() {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
       // 1) Hide on scroll down, show on scroll up
@@ -88,8 +84,7 @@
   </script>
 
   <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <?php include './globals/bootstrapJS.php'; ?>
 </body>
+
 </html>

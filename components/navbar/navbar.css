@@ -38,6 +38,10 @@ body,
     height: 40px;
     margin-right: 10px;
 }
+/* Added so that when you click Luki131 it doesn`t change color and remain white*/
+.navbar-brand.logo-link:visited {
+    color: white;
+  }
 
 .logo-link {
     color: white;
@@ -119,3 +123,5 @@ body,
 .btn-pop::after {
     display: none;
 }
+
+
