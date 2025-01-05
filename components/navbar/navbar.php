@@ -20,7 +20,7 @@
     <div class="container-fluid">
       <a class="navbar-brand logo-link" href="index.php">
         <img src="resources/logo2.png" alt="Logo" />
-        Luki131
+        Laki131
       </a>
 
       <button
@@ -55,9 +55,24 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="dropdown-icon-container">
+                <img src="./resources/favicon-32x32.png" alt="Language Icon" class="dropdown-icon">
+                <span class="dropdown-arrow"></span>
+              </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+              <!-- Add more languages as needed -->
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link btn-pop contact-link" href="#">Contact Us</a>
           </li>
+
         </ul>
       </div>
     </div>
