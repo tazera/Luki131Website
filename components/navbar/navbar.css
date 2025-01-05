@@ -1,0 +1,121 @@
+/* Apply the Montserrat font */
+body,
+.navbar {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar base styling */
+#main-navbar {
+    background: transparent;
+    transition: top 0.3s ease, background-color 0.3s ease;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* When the user scrolls more than 50px, add a semi-transparent background */
+#main-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Class to hide the navbar (slide it up) */
+#main-navbar.nav-hide {
+    top: -80px; /* adjust based on your navbar height */
+}
+
+/* Brand */
+.navbar-brand {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-link {
+    color: white;
+}
+.logo-link:hover {
+    color: #ff8800;
+}
+
+/* Navbar items */
+.navbar-nav {
+    margin-left: auto;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff8800;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff8800, #ff5722);
+    transition: width 0.3s ease, transform 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    text-align: left;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #ff8800;
+    background-color: transparent;
+}
+
+/* "Contact Us" button highlight */
+.btn-pop {
+    background: linear-gradient(90deg, #ff8800, #ff5722);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-pop:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.5);
+    color: white; /* Ensures text remains white on hover */
+}
+
+/* Remove the link underline effect on hover for the .btn-pop */
+.btn-pop::after {
+    display: none;
+}
