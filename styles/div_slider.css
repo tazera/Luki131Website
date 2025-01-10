@@ -7,17 +7,14 @@
     background-color: #000;
 }
 
-/* Each slide sits in the same place, stacked */
 .slide {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-
-    /* Start hidden (opacity 0) */
+    /* Start hidden */
     opacity: 0;
-
-    /* Apply the same fade animation, but each slide is delayed differently */
-    animation: fade 17s infinite;
-}
+    /* Smooth fade transition when JS changes opacity */
+    transition: opacity 1s ease;
+  }
 
 /* Each slide’s image: fill container, but crop edges if ratio differs */
 .slide img {
@@ -27,45 +24,46 @@
     display: block;
 }
 
-/* Fade keyframes:
-   - 0→15%: fade in from 0 to 1
-   - 15→45%: stay visible (1)
-   - 45→55%: fade out from 1 to 0
-   - 55→100%: remain hidden (0) */
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    15% {
-        opacity: 1;
-    }
-    45% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* Offset the start times so each slide gets 4 seconds 'shift'
-   in the 12s total cycle:
-   - 1st slide: no delay
-   - 2nd slide: 4s delay
-   - 3rd slide: 8s delay
-*/
-.slide:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.slide:nth-child(2) {
-    animation-delay: 4s;
-}
-
-.slide:nth-child(3) {
-    animation-delay: 8s;
-}
-
-
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem; /* Adjust arrow size */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .arrow.left {
+    left: 10px; /* Position left arrow */
+  }
+  
+  .arrow.left::before {
+    content: '<'; /* Left arrow */
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .arrow.right {
+    right: 10px; /* Position right arrow */
+  }
+  
+  .arrow.right::before {
+    content: '>'; /* Right arrow */
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .arrow:hover::before {
+    color: gray; /* Slight gray color on hover */
+  }
+  

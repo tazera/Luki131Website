@@ -24,7 +24,6 @@ array_push($client_details['visited_pages'],'index.php');
 		<?php require_once('components/navbar/navbar.php');?>
 
 
-
        <div class="image-slider">
        		<div class="slide">
        			<img src="resources/pic1.jpg" alt="Picture 1">
@@ -35,8 +34,9 @@ array_push($client_details['visited_pages'],'index.php');
        		<div class="slide">
        			<img src="resources/pic3.jpg" alt="Picture 3">
        		</div>
+			   <button class="arrow left"></button>
+			   <button class="arrow right"></button>
        	</div>
-
 
 			<!--DIVIDER-->
 			<?php require('components/divider/divider.php');?>
@@ -182,15 +182,15 @@ array_push($client_details['visited_pages'],'index.php');
 						<br>
 						<br>
 						<section class="customer-logos slider">
-							<div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-							<div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+							<div class="slide1"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+							<div class="slide1"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
 						</section>
 						<br>
 						<br>
@@ -259,6 +259,8 @@ array_push($client_details['visited_pages'],'index.php');
 
 		<script src="scripts/partner_slider.js"></script>
 
+		<!-- Include the JavaScript file -->
+    	<script src="scripts/div_slider.js"></script>
 
 		<?php require_once('globals/bootstrapJS.php');?>
 	</body>

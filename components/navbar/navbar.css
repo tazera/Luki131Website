@@ -1,18 +1,19 @@
 /* Apply the Montserrat font */
 body,
 .navbar {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    
 }
 
 /* Navbar base styling */
 #main-navbar {
-    background: transparent;  /* Set initial background color */
+    background: white;  /* Set initial background color */
     transition: top 0.3s ease, background-color 0.3s ease;
     top: 0;
     width: 100%;
     z-index: 9999;
     position: fixed; /* Make the navbar sticky */
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 /* When the user scrolls more than 50px, add a semi-transparent background */
@@ -37,18 +38,39 @@ body,
 
 /* Brand */
 .navbar-brand {
-    font-size: 19px;
-    padding: 10px 15px;
-    color: white;
-    font-weight: 600;
+    font-size: 25px !important; 
+    padding: 15px 15px ;
+    font-weight: 700;
     display: flex;
     align-items: center;
+    transform: scale(1.7); /* Scale up the brand elements */
+    transform-origin: left center;  /* Ensure scaling starts from the left */
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px; /* Add letter spacing */
 }
 
-.navbar-brand img {
-    height: 60px;
-    margin-right: 10px;
+.navbar-brant-icon {
+    width: 42px; /* Set width to match favicon size */
+    height: 42px; /* Set height to match favicon size */
 }
+
+
+.navbar-brand .brand-laki {
+    color: #ff8800; /* Orange color for "Laki" */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+     background: linear-gradient(90deg, #ff8800, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.navbar-brand .brand-131 {
+    color: #0b74b9; /* Blue color for "131" */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #0b74b9, #057ceb); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Added so that when you click Luki131 it doesn`t change color and remain white*/
 .navbar-brand.logo-link:visited {
     color: rgb(10, 10, 10);
@@ -74,6 +96,8 @@ body,
     padding: 10px 15px;
     position: relative;
     transition: color 0.3s ease;
+    transform: scale(1.1);
+    transform-origin: center;
 }
 
 .nav-link:hover {
@@ -131,20 +155,19 @@ body,
 }
 
 
-
 /* "Contact Us" button highlight */
 .btn-pop {
-    background: linear-gradient(90deg, #ff8800, #ff5722);
+    background: linear-gradient(90deg, #ff8800, #d33d10);
     color: white;
     font-weight: 600;
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+   
 
 .btn-pop:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.5);
     color: white; /* Ensures text remains white on hover */
 }
@@ -153,16 +176,6 @@ body,
     color: white;
 }
 
-/* Remove the link underline effect on hover for the .btn-pop */
-.btn-pop::after {
-    display: none;
-}
-
-
-/* Remove the default Bootstrap dropdown arrow */
-.nav-link.dropdown-toggle::after {
-    display: none;
-}
 
 /* Dropdown icon container */
 .dropdown-icon-container {
@@ -184,3 +197,15 @@ body,
     margin-right: 5px;
 }
 
+/*------------------ Bug fixes -----------------------------*/
+/* Remove the link underline effect on hover for the .btn-pop */
+.btn-pop::after {
+    display: none;
+}
+
+
+/* Remove the default Bootstrap dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+/*------------------ Bug fixes -----------------------------*/
