@@ -1,59 +1,65 @@
-<div class="container">
-	<footer class="py-5">
-		<div class="row">
-			<div class="col-6 col-md-2 mb-3">
-				<h5>Section</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-				</ul>
-			</div>
+<!-- filepath: /c:/Work/Projects/Luki131Website/components/footer/footer.php -->
+<?php require_once('globals/bootstrapCSS.php'); ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/components/footer/footer.css" />
 
-			<div class="col-6 col-md-2 mb-3">
-				<h5>Section</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-				</ul>
-			</div>
+<footer class="mt-auto bg-white text-black">
+  <div class="container">
+    <div class="row">
+      <!-- Logo and Brand Text on the Left -->
+      <div class="col-md-3 mb-4 footer-brand d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
+        <img src="resources/laki131_logo3.png" alt="Laki 131 Logo" class="footer-logo mb-3">
+        <!-- Brand Text -->
+        <div class="brand-text">
+          <span class="brand-laki">Laki131</span>
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin-icon mt-2">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
 
-			<div class="col-6 col-md-2 mb-3">
-				<h5>Section</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-					<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-				</ul>
-			</div>
+      <!-- Services Column -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-black">Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Die Casting</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Powder Coating</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Injection Molding</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">CNC Machining</a></li>
+        </ul>
+      </div>
 
-			<div class="col-md-5 offset-md-1 mb-3">
-				<form>
-					<h5>Subscribe to our newsletter</h5>
-					<h4>Monthly digest of what's new and exciting from us.</h4>
-					<div class="d-flex flex-column flex-sm-row w-100 gap-2">
-						<label for="newsletter1" class="visually-hidden">Email address</label>
-						<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-						<button class="btn btn-default" style="background-color: orange;" type="button">Subscribe</button>
-					</div>
-				</form>
-			</div>
-		</div>
+      <!-- Industries Column -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-black">Industries</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Automotive Industry</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Electrical Industry</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Construction Industry</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Carpenter Industry</a></li>
+        </ul>
+      </div>
 
-		<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-			<h6>© 2024 Company, Inc. All rights reserved.</h6>
-			<ul class="list-unstyled d-flex">
-				<li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-				<li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-				<li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-			</ul>
-		</div>
-	</footer>
-</div>
+      <!-- Company Column -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-black">Company</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Sustainability</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Partners & Clients</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-black">Certificates</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="mb-4 border-black">
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="text-black">&copy; 2024 Laki131. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<?php require_once('globals/bootstrapJS.php'); ?>

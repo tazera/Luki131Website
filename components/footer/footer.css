@@ -1,0 +1,76 @@
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa; /* Light background for better contrast */
+  color: #000; /* Ensure text is black */
+  padding: 40px 0; /* Increased padding for more spacing */
+}
+
+/* Logo Styling */
+.footer-logo {
+  width: 100px; /* Increased width */
+  height: 100px; /* Increased height */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the logo */
+}
+
+/* Brand Text Styling */
+.brand-text {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally on small screens */
+  align-items: flex-start; /* Align items to the start on medium and larger screens */
+}
+
+.brand-laki {
+  font-size: 1.8rem; /* Larger font size */
+  font-weight: bold;
+  color: #ff8800; /* Example color for differentiation */
+}
+
+/* Link Styling */
+footer a {
+  color: #000; /* Black text for links */
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff8800; /* Change color on hover */
+}
+
+/* Horizontal Rule Styling */
+hr.border-black {
+  border-top: 2px solid #000; /* Thicker black border */
+}
+
+/* LinkedIn Icon Styling */
+.linkedin-icon {
+  display: inline-block;
+  margin-top: 10px; /* Space above the icon */
+  color: #000; /* Initial icon color */
+  font-size: 2rem; /* Icon size */
+  transition: color 0.3s;
+}
+
+.linkedin-icon:hover {
+  color: #0e76a8; /* LinkedIn brand color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .footer-brand {
+      flex-direction: column; /* Stack logo and text vertically on small screens */
+      text-align: center; /* Center align on small screens */
+  }
+
+  .brand-text {
+      align-items: center; /* Center text horizontally */
+  }
+
+  .footer-logo {
+      margin: 0 auto 15px; /* Center logo and add bottom margin */
+  }
+
+  .linkedin-icon {
+      margin-top: 10px; /* Ensure spacing on small screens */
+  }
+}

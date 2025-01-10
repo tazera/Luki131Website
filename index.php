@@ -248,7 +248,10 @@ array_push($client_details['visited_pages'],'index.php');
 			<!--DIVIDER-->
 			<?php require('components/divider/divider.php');?>
 
+			<!--FOOTER-->
+			<div class="mt-5">
 			<?php require('components/footer/footer.php');?>
+			</div>
 		</div>
 
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
