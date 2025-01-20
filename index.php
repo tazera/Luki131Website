@@ -17,6 +17,8 @@ array_push($client_details['visited_pages'], 'index.php');
 	<?php require_once('globals/bootstrapCSS.php'); ?>
 	<link rel="stylesheet" href="styles/partner_slider.css">
 	<link rel="stylesheet" href="styles/div_slider.css">
+	<link rel="stylesheet" href="globals/static/output.css">
+	<link rel="stylesheet" href="styles/index.css">
 	<title>Laki 131</title>
 	<link rel="icon" type="image/png" href="resources/logo.png">
 </head>
@@ -46,50 +48,50 @@ array_push($client_details['visited_pages'], 'index.php');
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--WHO ARE WE BOX-->
-	<div class="row justify-content-center w-100">
-		<!--TEXT CONTENT-->
-		<div class="row justify-content-center">
-			<div class="col-7">
-				<h1 class="m-4 fw-bold" style="text-align: center;">Who are We</h1>
-				<p style="text-align: justify;">
-					Welcome to Laki 131 Ltd., a leading manufacturer of high-quality aluminum alloy castings produced under high pressure. With a rich history dating back to 1991, our company has evolved to become a trusted partner for industries worldwide, including automotive, machine building, construction, and LED lighting. ISO 9001:2008 certified, we pride ourselves on our commitment to excellence, innovation, and customer satisfaction. Our state-of-the-art facilities, equipped with cutting-edge machinery and a team of skilled professionals, enable us to deliver over 1200 tons of aluminum castings per year. At Laki 131, we strive to meet the evolving needs of our customers, driving growth and expansion into new markets with innovative products and technologies. With a strong focus on quality, reliability, and environmental responsibility, we aim to build long-lasting relationships with our clients and contribute to the success of their businesses. You can find out more at our <a href="https://www.youtube.com/@emilruskov7485" target="_blank">YouTube Channle</a>.
-				</p>
-			</div>
-		</div>
-
-		<!--LEARN MORE BUTTON-->
-		<div class="row justify-content-center">
-			<a class="btn btn-default col-2 m-4" style="background-color: orange;">Learn More</a>
-		</div>
-	</div>
+	<?php require_once('components/index_components/introduction.php'); ?>
 
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--SERVICES WE OFFER-->
-	<div class="row justify-content-center w-100">
-		<!--TEXT CONTENT-->
-		<div class="row justify-content-center">
-			<div class="col-7">
-				<h1 class="m-4 fw-bold" style="text-align: center;">Services We Offer</h1>
-				<p style="text-align: justify;">
-					At Laki 131, we offer a range of services designed to meet the diverse needs of our clients. Our two main areas of expertise are:
-				</p>
-				<ul>
-					<li>
-						<p>
-							Aluminum Casting: We utilize modern technologies and state-of-the-art equipment to produce high-quality aluminum castings. Our facilities are equipped with advanced machinery, including cold chamber casting machines, allowing us to deliver precision-crafted parts with exceptional accuracy and consistency.
-						</p>
-					</li>
-					<li>
-						<p>
-							Powder Coating: We also provide a powder coating service, using the latest technologies to apply a durable and corrosion-resistant finish to our clients' products. Our powder coating process ensures a high-quality, long-lasting finish that meets the most stringent standards.
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<!--Our Services-->
+	<section class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Our Services</h2>
+        
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Service One</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="resources/Service2.jpg/300" class="card-img-top" alt="Service 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Service Two</h5>
+                        <p class="card-text">Suspendisse potenti. Pellentesque habitant morbi tristique senectus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Service Three</h5>
+                        <p class="card-text">Curabitur vel quam et turpis tincidunt molestie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 		<!--LEARN MORE BUTTON-->
 		<div class="row justify-content-center">
@@ -211,7 +213,7 @@ array_push($client_details['visited_pages'], 'index.php');
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--SERVICES WE OFFER-->
+	<!--FIND US-->
 	<div class="row justify-content-center w-100 mb-5" style="">
 		<div class="row justify-content-center mb-5">
 			<h1 class="fw-bold m-4" style="text-align: center;">Where Can You Find Us?</h2>
@@ -229,7 +231,7 @@ array_push($client_details['visited_pages'], 'index.php');
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--SERVICES WE OFFER-->
+	<!--MACHINE PARK-->
 	<div class="row justify-content-center w-100 mb-5" style="">
 		<div class="row justify-content-center mb-5">
 			<h1 class="fw-bold m-4" style="text-align: center;">Machine Park</h2>

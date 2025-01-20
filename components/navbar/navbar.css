@@ -43,15 +43,28 @@ body,
     font-weight: 700;
     display: flex;
     align-items: center;
-    transform: scale(1.7); /* Scale up the brand elements */
+    transform: scale(1.5); /* Scale up the brand elements */
     transform-origin: left center;  /* Ensure scaling starts from the left */
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px; /* Add letter spacing */
 }
 
+/* Scale down on small screens */
+@media (max-width: 768px) {
+    .navbar-brand {
+        transform: scale(1);
+        font-size: 20px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 14px;  /* Smaller link text */
+        padding: 5px 10px;
+    }
+}
+
 .navbar-brant-icon {
     width: 42px; /* Set width to match favicon size */
     height: 42px; /* Set height to match favicon size */
+    margin-top: -3px;
 }
 
 
