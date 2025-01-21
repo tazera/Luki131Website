@@ -1,6 +1,5 @@
 <!-- filepath: /c:/Work/Projects/Luki131Website/components/footer/footer.php -->
 <?php require_once('globals/bootstrapCSS.php'); ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/components/footer/footer.css" />
 
 <footer class="mt-auto bg-white text-black">

@@ -6,7 +6,6 @@
   <!-- Bootstrap CSS -->
   <?php include './globals/bootstrapCSS.php'; ?>
   <link rel="stylesheet" href="/components/navbar/navbar.css" />
-
   <!-- Google Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,10 +38,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="components/about/about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Powder Coating</a>
+            <a class="nav-link" href="components/services/powder_coating/powder_coating.php">Powder Coating</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +72,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-pop contact-link" href="#">Contact Us</a>
+            <a class="nav-link btn-pop contact-link" href="/components/contact/contact.php">Contact Us</a>
           </li>
 
         </ul>

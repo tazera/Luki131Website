@@ -48,127 +48,67 @@ array_push($client_details['visited_pages'], 'index.php');
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<?php require_once('components/index_components/introduction.php'); ?>
+	<?php require_once('components/index_components/introduction/introduction.php'); ?>
 
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
 	<!--Our Services-->
 	<section class="container py-5">
-        <h2 class="text-center fw-bold mb-4">Our Services</h2>
-        
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Service One</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
+		<h2 class="text-center fw-bold mb-4">Our Services</h2>
 
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="resources/Service2.jpg/300" class="card-img-top" alt="Service 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Service Two</h5>
-                        <p class="card-text">Suspendisse potenti. Pellentesque habitant morbi tristique senectus.</p>
-                    </div>
-                </div>
-            </div>
+		<div class="row g-4">
+			<!-- Card 1 -->
+			<div class="col-md-4">
+				<div class="card shadow">
+					<img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 1">
+					<div class="card-body text-center">
+						<h5 class="card-title">Service One</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
 
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Service Three</h5>
-                        <p class="card-text">Curabitur vel quam et turpis tincidunt molestie.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<!-- Card 2 -->
+			<div class="col-md-4">
+				<div class="card shadow">
+					<img src="resources/Service2.jpg/300" class="card-img-top" alt="Service 2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Service Two</h5>
+						<p class="card-text">Suspendisse potenti. Pellentesque habitant morbi tristique senectus.</p>
+					</div>
+				</div>
+			</div>
 
-		<!--LEARN MORE BUTTON-->
-		<div class="row justify-content-center">
-			<a class="btn btn-default col-2 m-4" style="background-color: orange;">Learn More</a>
+			<!-- Card 3 -->
+			<div class="col-md-4">
+				<div class="card shadow">
+					<img src="resources/Service1.jpg/300" class="card-img-top" alt="Service 3">
+					<div class="card-body text-center">
+						<h5 class="card-title">Service Three</h5>
+						<p class="card-text">Curabitur vel quam et turpis tincidunt molestie.</p>
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
+
+	<!--LEARN MORE BUTTON-->
+	<div class="row justify-content-center">
+		<a class="btn btn-default col-2 m-4" style="background-color: orange;">Learn More</a>
+	</div>
 	</div>
 
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<div class="row justify-content-center w-100 mb-5">
-		<!--TEXT CONTENT-->
-		<div class="row justify-content-center">
-			<h1 class="m-4 fw-bold" style="text-align: center;">We Care About the Earth</h1>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-3">
-				<p style="text-align: justify;">
-					We employ modern methods of clean prodction, having plans to become <b>Carbon Neutral</b> by <b>2026</b>.
-				</p>
-			</div>
-			<!--CHART-->
-			<div class="col-4">
-				<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-			</div>
-		</div>
-	</div>
-
-	<!--CHART JS-->
-	<?php require('components/charts/chart-js.php'); ?>
+	<?php require_once('components/index_components/machine_park/machine_park.php'); ?>
 
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
 
-	<!--CERTIFICATES-->
-	<div class="row justify-content-center w-100">
-		<div class="row justify-content-center">
-			<div class="col-7">
-				<h1 class="m-4 fw-bold" style="text-align: center;">Our Certificates</h1>
-				<p style="text-align: justify;">
-					Our company is certified to ISO 9001:2000 since October 2005 and re-registered with an ISO 9001:2015 certificate in October 2016 by the certification body "TUV-NORD - Bulgaria". We hold the following certifications: ISO 9001:2015 for Quality Management System, ISO 14001:2015 for Environmental Management System, and ISO 50001:2018 for Energy Management System. These certifications demonstrate our commitment to maintaining high standards of quality, environmental responsibility, and energy efficiency in our operations.
-				</p>
-			</div>
-		</div>
-		<div class="row justify-content-center align-items-end" style="padding-bottom: 50px;">
-			<div style="width: 16px; margin-right: 50px ;margin-bottom: 80px;">
-				<button type="button" class="btn btn-default" style="background-color: orange;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
-					</svg>
-				</button>
-			</div>
-
-			<div style="width: 200px; height: 200px; border: 3px solid black; border-radius: 10px; overflow: hidden; padding: 0px; margin: 10px;">
-				<img src="cert2.jpg" style="width: 200px;"></img>
-			</div>
-
-			<div style="width: 300px; height: 300px; border: 3px solid black; border-radius: 10px; overflow: hidden; padding: 0px; margin: 10px;">
-				<img src="cert1.jpg" style="width: 300px;"></img>
-			</div>
-
-			<div style="width: 200px; height: 200px; border: 3px solid black; border-radius: 10px; overflow: hidden; padding: 0px; margin: 10px;">
-				<img src="cert1.jpg" style="width: 200px;"></img>
-			</div>
-
-			<div style="width: 16px; margin-left: 10px ;margin-bottom: 80px;">
-				<button type="button" class="btn btn-default" style="background-color: orange;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
-					</svg>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<?php require('components/divider/divider.php'); ?>
+	<!--Clients-->
 
 	<div class="row justify-content-center w-100">
 		<div class="row justify-content-center">
@@ -213,43 +153,38 @@ array_push($client_details['visited_pages'], 'index.php');
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--FIND US-->
-	<div class="row justify-content-center w-100 mb-5" style="">
-		<div class="row justify-content-center mb-5">
-			<h1 class="fw-bold m-4" style="text-align: center;">Where Can You Find Us?</h2>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-3">
-				<p>We are situated in the beautiful city of Plovdiv, Bulgaria. So on, so on, so on, so on, so on, so on, so on, so on, so on.</p>
-			</div>
-			<div class="col-4">
-				<?php require('components/maps/map.php'); ?>
-			</div>
-		</div>
-	</div>
+	<!--CERTIFICATES-->
+	<?php require_once('components/index_components/certificates/certificate.php'); ?>
 
 	<!--DIVIDER-->
 	<?php require('components/divider/divider.php'); ?>
 
-	<!--MACHINE PARK-->
-	<div class="row justify-content-center w-100 mb-5" style="">
-		<div class="row justify-content-center mb-5">
-			<h1 class="fw-bold m-4" style="text-align: center;">Machine Park</h2>
+	<!--FIND US-->
+	
+
+	<!--DIVIDER-->
+	
+
+	<div class="row justify-content-center w-100 mb-5">
+		<!--TEXT CONTENT-->
+		<div class="row justify-content-center">
+			<h1 class="m-4 fw-bold" style="text-align: center;">We Care About the Earth</h1>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-3">
-				<p>We are equipped with moder machinary, helping us to provide high precision and ecological production. Yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada</p>
+				<p style="text-align: justify;">
+					We employ modern methods of clean prodction, having plans to become <b>Carbon Neutral</b> by <b>2026</b>.
+				</p>
 			</div>
+			<!--CHART-->
 			<div class="col-4">
-				<div style="height: 600px; background-color: black; border-radius: 20px;">
-				</div>
+				<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 			</div>
-		</div>
-		<!--LEARN MORE BUTTON-->
-		<div class="row justify-content-center mb-2">
-			<a class="btn btn-default col-2 m-4" style="background-color: orange;">Learn More</a>
 		</div>
 	</div>
+
+	<!--CHART JS-->
+	<?php require('components/charts/chart-js.php'); ?>
 
 
 	<!--DIVIDER-->
@@ -259,7 +194,7 @@ array_push($client_details['visited_pages'], 'index.php');
 	<div class="mt-5">
 		<?php require('components/footer/footer.php'); ?>
 	</div>
-	</div>
+	
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

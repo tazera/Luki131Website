@@ -1,0 +1,45 @@
+/************************************************************
+ * Industry Solutions Section Styles
+ ************************************************************/
+  
+  /* Button styling to mimic dw-alu’s orange button with arrow */
+  .arrow-button {
+    background-color: #fcb32c; /* Orange color used on dw-alu.de */
+    color: #fff;
+    padding: 0.625rem 1.25rem; /* 10px by 20px */
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: #e89c1e; /* Darker shade of orange */
+  }
+  
+  .arrow-button svg {
+    margin-left: 0.5rem; /* Space between text and arrow */
+  }
+
+  .image-col img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* This is in addition to "rounded-3" */
+    margin-left: -20%; /* Adjust as needed to move the image to the left */
+  }
+
+  .text-col {
+    margin-left: -20%; /* Adjust as needed to move the text to the left */
+  }
+
+  /* Adjust margin for smaller screens */
+@media (max-width: 768px) {
+    .image-col img {
+      margin-left: -5%; /* Less margin for smaller screens */
+    }
+    .text-col {
+      margin-left: +2%; /* Less margin for smaller screens */
+    }
+  }
